@@ -1,0 +1,878 @@
+/* The end user can put their custom changes in this file */
+
+/* INAWIRE STUFF:   may merge into main css at some later date   */
+
+/* Make Style box wider to read Custom Styles RM 2015-03-22
+Note did not work here edited in Skin directly in
+editor.css AND editor_gecko.css
+.cke_combo_text{
+    width: 170px; was 60px
+}
+
+.cke_combopanel{
+  width: 200px; eas 150px
+}
+*/
+
+/* TEMP TODO RM 2015-07-07*/
+
+.navbar-nav>li>a.underline-green-temp {
+	border-bottom-color: #10638B;
+}
+
+.navbar-inverse .navbar-toggle {
+	background-color: transparent;
+	border-color: transparent;
+	margin-bottom: 4px;
+	margin-top: 4px;
+}
+
+
+html{
+
+}
+
+div.showCurrentUser{
+    /* margin: 0 15px;         darkorange;      clear: both; */
+    color: #ffffff;
+    background-color: #272727;
+
+}
+div.showCurrentUser span.strText{
+    font-size: small;
+}
+
+.showMutedPkID{
+    font-size: smaller;
+    color: #d6d6d6;
+}
+
+div.no-padding{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.events h2 {
+    background-color: #cb2227;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 200;
+    margin: 0;
+    padding: 5px 15px 5px 15px;
+
+}
+
+.events h2 small{
+    color: #fff;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+}
+.indicate_3rdParty{
+	/* background-color: #e1b005;*/
+	color: #333333;
+}
+
+.bio-block {
+    background: none repeat scroll 0 0 #fcfcfc;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out 0s;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #fafafa;
+    border-color: #eee #eee #eee #DCDEE1;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 1px 1px 2px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.bio-block h2{
+    margin-top: 0;
+}
+
+.bio-block-text{
+    text-align: justify;
+}
+.bio-block-title{
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+.hero-content-container {
+	background-image: url('/img/hero-bg.jpg');
+}
+
+/*.main .lead { is actually .content RM 201503-22 */
+.content .lead {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.event_wrapper{
+	clear: both;
+	border-bottom: 1px solid #f1f1f1;
+	margin-bottom: 1px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.events_attending, .events_invitations{
+	background-color: #fefefe;
+
+}
+
+.b2b_panel_alternate_background,
+.panel-default .b2b_panel_alternate_background{
+	background-color: #ebdede; /*  rgba(235, 222, 222, 1);  */
+}
+
+.panel-body#myMeetingSchedule{
+	padding-top: 0px;  /* used in b2b schedule to eliminate wanted padding */
+}
+
+.heading_primary{
+    padding-top: 8px;
+    padding-bottom:8px;
+}
+
+.events_not_attending{
+	background-color: #eeeeee;
+}
+
+.event_wrapper .event-addon-date .dates {
+	font-size: 21px;
+}
+
+.event_wrapper .event-addon-date .months {
+	font-size: 11px;
+}
+.event_wrapper .event-addon-date .days {
+	font-size: 12px;
+}
+
+
+.display_invite_cell{
+	margin-left: 10px;
+}
+
+  .member-ask-link {
+	background-image: url('/img/bg-memberbar-page.png');
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+.margin-bottom-5 {
+    margin-bottom: 5px;
+}
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+.margin-top-20 {
+    margin-top: 20px;
+}
+.margin-top-10 {
+    margin-top: 10px;
+}
+.margin-top-5 {
+    margin-top: 5px;
+}
+.margin-top-0 {
+    margin-top: 0;
+}
+
+.border_btm_faint{
+    border-bottom: 1px solid #efefef;       /*  this would work on a white background but does not do sell on grey */
+}
+.border_btm_med{
+    border-bottom: 1px solid #dbdbdb;       /*  medium dark border   */  /*  style="border-bottom: 1px solid #e1e1e1;"  */
+}
+.border_btm_pronounced{
+    border-bottom: 1px solid #a7a7a7;      /*  fairly dark border   */
+}
+
+.border_top_faint{
+    border-top: 1px solid #efefef;       /*  this would work on a white background but does not do sell on grey */
+}
+.border_top_med{
+    border-top: 1px solid #dbdbdb;       /*  medium dark border   */  /*  style="border-bottom: 1px solid #e1e1e1;"  */
+}
+
+.dropdown-header {
+	cursor: default;
+}
+.text_field {
+	background-color: #FFF;
+	background-image: none;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	color: #555;
+	height: 34px;
+	line-height: 1.42857em;
+	padding: 6px 12px;
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+h2.title-link{
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 2px;
+}
+.margin-top-none {
+	margin-top: 0;
+}
+.btn.btn-linkx {
+	color: #4e5968;
+}
+.nav-tabs {
+	border-bottom: 3px #CB2227 solid;
+}
+.nav-tabs > li > a:hover {
+	border-color: #CB2227;
+}
+.nav-tabs > li {
+	margin-bottom: -3px;
+}
+.nav-tabs > li > a {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: none;
+	border-radius: 4px 4px 0 0;
+	line-height: 1.42857;
+	margin-right: 2px;
+	color: #555;
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	background-color: #404041;
+	border-bottom: 3px #CB2227 solid;
+	color: #bbbbbb;
+	cursor: default;
+}
+
+.icon_red{
+	/*  could be used to manipulate the color of the GlyphIcons as needed but when we got it on screen some felt overall it was too much */
+	color:  #cb2227;
+}
+
+.text-highlight{
+	color:  #cb2227;	/* used to make text stand out as in the Panel titles on the My Events Page */
+}
+.text-bold {
+    font-weight: bold !important;
+}
+.text-italic {
+	font-style: italic;
+}
+.text-ellipses {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+.lower .event-addon-space {
+	border-bottom: 1px solid #edeef0;
+}
+.lower .event-addon-space:last-child {
+	border-bottom: none;
+}
+.events .event-addon-iw {
+	height: 95px;
+}
+
+.form-group .inline-group {
+	display: inline-block;
+	margin-bottom: 0;
+	vertical-align: middle;
+}
+.inline-group .form-control {
+	display: inline-block;
+	vertical-align: middle;
+	width: 15%;
+}
+@media (max-width: 767px) {
+
+	.events .event-addon-iw {
+		width: 33.2%;
+	}
+
+	.events .event-addon-iw {
+		margin-right: 1px;
+	}
+
+	.events .event-addon-iw:last-child {
+		margin-right: 0;
+		margin-left: 2px;
+	}
+	.lower .event-addon-space:last-child {
+		border-bottom: 1px solid #edeef0;
+	}
+}
+@media (max-width: 535px) {
+	.events .event-addon-iw {
+		width: 33.1%;
+	}
+}
+
+@media (min-width: 768px) {
+	.event .event-addon-iw {
+		width: 100%;
+	}
+
+	.lower .event-addon:first-child {
+		border-bottom: 1px solid #EDEEF0;
+	}
+}
+@media (min-width: 991px) {
+	.event .event-addon-iw {
+		height: 84px;
+	}
+}
+@media (min-width: 1200px) {
+	.event .event-addon-iw {
+		height: 99px;
+	}
+}
+
+/* ====== BEGIN Legacy .CSS styles ======*/
+.bdr_btm {
+	border-bottom: 1px dotted #e8e8e8;
+}
+.address_divider {
+	border: 0px;
+	border-bottom: 1px solid black;
+	font-size: 1px;
+	height: 3px;
+	line-height: 3px;
+}
+.assertHeaderTextStyles {
+	color: #666666;
+	font-size: 10px;
+	line-height: 12px;
+	padding: 2px 4px 4px 2px;
+	text-align: right;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+.bg_2 {
+	background-color: #f4f4f4;
+}
+.bg_1 {
+	background-color: #e5e5e5;
+}
+.tag_list_divider {
+	background-color: #e6eed5 !important;
+	font-size: 1px;
+	line-height: 2px !important;
+}
+.ccc_zebraStripe {
+	background-color: #e6eed5 !important;
+	line-height: .8em !important;
+}
+.col_title {
+	background: none repeat scroll 0 0 #cccccc;
+	color: #999999;
+	font-size: 8pt;
+	font-weight: 100;
+	padding: 2px 2px 2px 6px;
+	text-align: left;
+}
+#inviteSchedule a {
+	text-decoration: none !important;
+}
+#inviteSchedule .open {
+	cursor: pointer;
+	border: 1px #03880e solid;
+	color: #03880e;
+	background-color: #ebfcf1;
+	padding-left: 3px;
+}
+#inviteSchedule .open:hover {
+	border: 1px #03b10e solid;
+	color: #03b10e;
+	background-color: #f7fffc;
+}
+#inviteSchedule .meeting,
+#proposeDelMeeting .hasAppt{
+	cursor: default;
+	border: 1px #807700 solid;
+	color: #887c00;
+	background-color: #fcf5df;
+}
+#selectionDelTable #inviteSchedule .meeting {
+	cursor: pointer;
+	width: 100%;
+	/*display: inline-block;*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#selectionDelTable #inviteSchedule .meeting span {
+	color: #887c00;
+}
+#selectionDelTable #inviteSchedule .meeting .meetingOrg,
+#proposeDelMeeting .meetingOrg{
+	display: inline-block;
+	min-width: 65%;
+	max-width: 65%;
+	width: 5px;
+	padding-left: 2px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 15px;
+}
+#selectionDelTable #inviteSchedule .meeting .meetingBooth,
+#proposeDelMeeting .meetingBooth{
+	display: inline-block;
+	max-width: 33.0%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#proposeDelMeeting .proposalDelSelect {
+	max-height: 18px;
+}
+#selectionDelTable #inviteSchedule .meeting:hover {
+	background-color: #d6cfb9;
+}
+#inviteSchedule .invited, #inviteSchedule_OL .invited,
+#proposeDelMeeting .proposalDelSelect{
+	cursor: pointer;
+	border: 1px solid #122f88;
+	color: #101133;
+	background-color: #e6f5ff;
+}
+#proposeDelMeeting .proposalDelSelect:hover{
+	background-color: #d0dfe9;
+}
+#inviteSchedule .full, #inviteSchedule .hoverOver .meeting, #inviteSchedule .hoverOver .open {
+	border: 1px #880000 solid;
+	color: #880000;
+	background-color: #fceeec;
+}
+#inviteSchedule .closed {
+	border: 1px #888888 solid;
+	background-color: #CCCCCC;
+	height: 18px;
+}
+#inviteSchedule .empty, #inviteSchedule_OL .empty {
+	color: #CCCCCC;
+	font-style: italic;
+}
+#inviteSchedule .meeting{
+	cursor: default;
+	border: 1px #807700 solid;
+	color: #887c00;
+	background-color: #fcf5df;
+}
+#selectionDelTable #inviteSchedule .meeting {
+	cursor: pointer;
+	width: 100%;
+	/*display: inline-block;*/
+	max-height: 22px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#selectionDelTable #inviteSchedule .meeting span {
+	color: #887c00;
+}
+#selectionDelTable #inviteSchedule .meeting .meetingOrg{
+	display: inline-block;
+	min-width: 65%;
+	width: 5px;
+	padding-left: 2px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#actionMeeting .availableMtg, .showTimeSlot:hover {
+	background-color: #f1fff1;
+	border: 1px solid #358835;
+	color: #113311;
+}
+#actionMeeting .availableMtg:hover {
+	 background-color: #d9ffde;
+	 color: #154a15;
+}
+#actionMeeting .actionBtn {
+	background-color: #f1fff1;
+	cursor: pointer;
+	padding: 10px;
+	width: 150px;
+}
+.actionBtn {
+	font-family: Verdana,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	width: 100px;
+}
+#actionMeeting div.btn div {
+	font-size: 11px;
+}
+#actionMeeting .unavailableMtg {
+	background-color: #fff3f1;
+	border: 1px solid #882222;
+	color: #331111;
+	cursor: default;
+}
+#actionMeeting .selectedMtg, .full.selectedSlot, .showedUp.selectedSlot {
+	background-color: #e6f5ff;
+	border: 1px solid #122f88;
+	color: #101133;
+}
+#actionMeeting .selectedMtg:hover {
+	background-color: #c8e1f3;
+	color: #223557;
+}
+.clickToShowSlotTable {
+	border: 1px solid #ffffff;
+	cursor: pointer;
+}
+#actionMeeting .conflictedMtg, .clickToShowSlotTable:hover {
+	background-color: #fcf5df;
+	border: 1px solid #807700;
+	color: #3e3200;
+}
+#actionMeeting div.conflictedMtg:hover {
+	background-color: #f3e5d0;
+}
+/* ====== END Legacy .CSS styles ======*/
+
+/* === END INAWIRE STUFF: ===================================== */
+/* === STYLE.CSS OVERRIDE: ===================================== */
+.subfeature-heading {
+	background-color: #cb2227;
+	color: #fff;
+	font-size: 15px;
+	margin: 0 0 20px;
+	padding: 10px 15px;
+	text-transform: none;
+	text-align:  left;
+}
+/* .list-page .content .list-group-item :: will never be used, not going to have a layout with .list-page on the body element *just* for this page. */
+.content .list-group-item {
+	/*border-left: 0 none;*/
+	/*border-right: 0 none;*/
+	padding-left: 5px;
+	padding-right: 2px;
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+
+}
+.list-group-item.list-group-item-hover:hover {
+    background-color: #EAEAEA;
+    border: 1px solid #D0D0D0;
+}
+.list-group-item.highlight {
+    background-color: #D9EDF7;
+    border: 1px solid #D0D0D0;
+}
+.list-group-item p.links {
+    margin: 0;
+}
+/* .list-page .content h2 :: will never be used, not going to have a layout with .list-page on the body element *just* for this page. */
+.list-group .media h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.list-group .media.media-condensed h2 {
+	font-size: 18px;
+	margin-bottom: 5px;
+    padding: 0;
+}
+.list-group .media.media-condensed {
+    padding: 0;
+}
+
+.digest p{
+	font-size: 16px;
+}
+
+.digest .list-group .media.media-condensed h2 {
+	font-size: 16px;
+	margin-bottom: 2px;
+	padding: 0;
+}
+
+.digest .media-heading h2{
+	font-size: 16px;
+}
+
+
+.digest .meta p{
+	font-size: 12px;
+	margin: 0;
+}
+
+.digest .links{
+	font-size: 12px;
+}
+/* .list-page .content .list-group-item span  :: will never be used, not going to have a layout with .list-page on the body element *just* for this page. */
+.content .list-group-item .media-body span { /* Looks like they liked the spacing on span elements, but wanted them to behave like divs. */
+	display: block;
+}
+/* .list-page .content .important  :: will never be used, not going to have a layout with .list-page on the body element *just* for this page. */
+.content .links .important {
+	color: #cb2227;
+	font-weight: bold;
+	margin-right: 20px;
+}
+/* .list-page .content .media  :: will never be used, not going to have a layout with .list-page on the body element *just* for this page.*/
+.content .list-group .media {
+	margin-bottom: 0;
+}
+.navbar-collapse-2 .navbar-collapse-1 .navbar-nav > li > a {
+	border-bottom: 5px solid;
+}
+.navbar-collapse-2 .navbar-collapse-1  .navbar-nav > li > a.underline-blue {
+	border-bottom-color: #2689c0;
+}
+.navbar-collapse-2 .navbar-collapse-1  .navbar-nav > li > a.underline-green {
+	border-bottom-color: #80a53f;
+}
+.navbar-collapse-2 .navbar-collapse-1  .navbar-nav > li > a.underline-red {
+	border-bottom: 5px solid #cb2227;;
+}
+.content-box-toggle, .content-box-header {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+	padding: 10px 0 5px;
+	text-transform: uppercase;
+}
+.content-box-toggle .caret {
+	float: right;
+	margin-top: 12px;
+}
+.content-box-toggle img {
+	margin-right: 30px;
+}
+.content-box-light .panel {
+	color: #4e5968;
+	padding: 10px 20px;
+}
+/* === END STYLE.CSS OVERRIDE: ===================================== */
+
+
+/* === STYLE.CSS EXTENSION:     ===================================== */
+/*        we need these styles to be available Less-Specifically 	*/
+.content-box-light {
+	background-color: #F5F5F5;
+	color: #4F5B67;
+	margin-bottom: 30px;
+	padding-bottom: 5px;
+	padding-top: 0;
+}
+.content-box-light .content-box-toggle {
+	color: #4F5B67;
+}
+.content-box-header {
+	padding: 10px 20px;
+	margin-bottom: 5px;
+}
+.event-addons {
+	float: left;
+	text-align: center;
+}
+
+ .event-addon {
+	/*  background-color: #DCDEE1; */
+	/*  color: #4E5968;  */
+	/*  float: left;  */
+	height: 100px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 15px;
+}
+/* 2015-03-18 RoK:   Heads up:	 on the MyEvents page ... the font-sizes below get overwritten by MY Styles above  */
+ .event-addon-date .dates {
+	font-size: 28px;
+	line-height: 0.9;
+}
+
+ .event-addon-date .months, .events .event-addon-date .days {
+	display: block;
+	font-size: 13px;
+}
+.event-addon-register {
+	padding-top: 20px;
+}
+.event-addon-calendar .event-link-text, .event-addon-register .event-link-text{
+	font-size: 11px;
+	margin-top: 5px;
+	display: block;
+}
+/* IW- Better style choice, overriding line 1232 in style.css */
+.event-list .day {
+	 letter-spacing: 1px;
+ }
+.content-box .btn-300 {
+  width: 300px;
+}
+@media(max-width: 450px) {
+	.content-box .btn-300 {
+		width: 100%;
+	  }
+}
+.event-sidebar .event-title {
+	text-transform: uppercase;
+	color: #cb2227;
+	padding-top: 20px;
+	font-weight: bold;
+}
+.event-sidebar {
+	border-bottom: 1px solid #ccc;
+}
+.content .h2 {
+	color: #4e5968;
+	font-weight: 200;
+	margin-top: 30px;
+}
+.media .h2 {
+	margin-top: inherit;
+}
+.list-group .media .h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.title-department {
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #F5F5F5;
+}
+.hero-blurb {
+	font-size: 16px;
+}
+
+/* === END STYLE.CSS EXTENSION: ===================================== */
+
+.margin-bottom-5 {
+	margin-bottom: 5px;
+}
+.leaf label {
+	font-weight: normal;
+}
+.ui-tabs .ui-tabs-nav li a {
+	padding: 0.5em;
+	font-size: 14px;
+}
+.ui-widget, .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+ }
+
+.light-block {
+    background-color: #F7F7F7;
+    padding: 5px;
+}
+.block-underline {
+    border-bottom: 1px #CCC solid;
+}
+
+/*=== Card .css styles ===============================================*/
+/* New styles to replace old hotspot-graphic on CANSEC registration confirmation page */
+.card-icon-hero {
+    line-height: 40px;
+    font-size: 40px;
+    margin-right: 10px;
+    width: 20%;
+    min-width: 50px;
+    float: left;
+}
+.card-text {
+    display: inline-block;
+    float: left;
+    width: 75%;
+    font-weight: bold;
+}
+.card {
+    padding: 15px 12px;
+    margin: 6px 0;
+    line-height: 20px;
+    min-height: 80px;
+    width: 100%;
+    background-color: #E5E5E5;
+    color: #666;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+.card:hover {
+    background-color: #FAFAFA;
+    color: #333;
+    border: 1px solid #CCC;
+}
+/*
+.card-success {
+    color: #FFF;
+    background-color: #9BD18C;
+}
+.card-success:hover {
+    color: #FAFAFA;
+    background-color: #9BD18C;
+}
+*/
+
+/*  2016-12-16 RoK:  homepage members-Only prompt  */
+.mbrs-only-prompt{
+    font-size: 88%;
+    padding-left: 1em; /* indented by 1-letter-space */
+    text-transform: none !important;
+}
+.my-cadsi-hilight-new-prompt{
+    font-size: 88%;
+    margin-top: -10px;
+    text-transform: none !important;
+}
+
+/*  2016-10-17 RoK:  let's create a generic no-print class & that way we can set various things to Not Print  */
+@media print
+{
+    .no-print, . *
+    {
+        display: none !important;
+    }
+    /*  and an i-2 style that I need to override when printing */
+    .main .page {
+        border-top: 0px !important;
+        padding-bottom: 5px !important;
+    }
+
+
+}

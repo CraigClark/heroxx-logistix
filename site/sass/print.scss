@@ -1,0 +1,56 @@
+.logo img {
+	position: absolute;
+	left: 0;
+	max-width: 1in;
+	max-height: 1in;
+	}
+
+
+nav ul, .handle {
+	display: none;
+}
+
+h1 {font-size: 24pt;
+	font-weight: bold;
+}
+
+h1.site-title {
+	margin-left: 1.25in;
+}
+
+h2 {
+	font-weight: bold;
+
+}
+
+p {
+	line-height: 16pt;
+	padding: 1em;
+	margin-botom: 30px;
+}
+
+ul {
+	padding: 1em;
+	line-height: 16pt;
+	list-style-type:circle;
+	list-style-position:inside;
+}
+
+aside {
+	border-top: 1px solid #000000;
+	margin: 2em auto;
+	padding: 1em;
+	color: #666666;
+	font-style: italic;
+	border-bottom: 1px solid #000000;
+	width: 33%;
+	float: right;
+	margin: 1.5em;
+}
+
+
+footer:after  {
+	display: block;
+	padding-left: 1em;
+	content: "rheroux@heroxx.com | www.heroxx.com";
+}

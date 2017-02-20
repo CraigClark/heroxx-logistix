@@ -1,0 +1,484 @@
+
+// Variables
+
+//colours
+
+$site-title-first-color: #000000;
+$site-title-second-color: #666666;
+$borders-and-highlights: #363695;
+$nav-bkg: #272635;
+$nav-link: #e8e9f3;
+$shadow: rgba(0,0,0,0.5);
+
+$logo-dimension: 160px;
+$logo-dimension-small: 90px;
+$footerheight: 35px;
+$wrapper-width: 96%;
+
+
+//mixins
+
+@mixin content-block {
+	background-color: #ffffff;
+	border: 1px solid $borders-and-highlights;
+	overflow: hidden;
+	border-radius: 15px;
+}
+
+.alternate-front-page {
+	section {
+		margin-top: 1em;
+	@include content-block;
+	h1 {
+		text-align: left;
+	}
+	}
+}
+
+
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  overflow-y: scroll;
+
+
+  // set up 1em
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	background: linear-gradient(#5454a5, #f7f5f9);
+	min-width: 300px;
+}
+a {
+	transition: all 0.5s ease;
+	}
+	
+article {
+	h2,h3,h4 {
+		color: $site-title-second-color;
+	}
+	h1 {
+	font-size: 1.65em;
+	text-align: center;
+	margin: .75em;
+	}
+	
+	h1.secondary {
+		margin-top: 2em;
+		font-size: 3em;
+		font-family: "Times New Roman", Georgia, Serif;
+		color: $site-title-first-color;
+	}
+		
+	h2 {
+		font-size: 1.5em;
+		padding: .5em 0 0 1em;
+		margin-top: 1em;
+	}
+	
+	h3 {
+		font-size: 1.32em;
+		padding: .5em 0 0 1em;
+	}
+
+	 p,ul {
+	 font-size: 1.25em;
+	  line-height: 1.6em;
+	  padding: .5em 1em;
+	  }
+	  
+}
+
+article:nth-child(1) {
+	h1 {
+		font-size: 2em;
+	}
+}
+
+article {
+	ul {
+		list-style:inside;
+	}
+}
+
+
+aside {
+	border-top: 1px solid #000000;
+	margin: 2em auto;
+	padding: 1em;
+	color: #666666;
+	font-style: italic;
+	border-bottom: 1px solid #000000;
+	width: 86%;
+	font-size: .9rem;
+	
+	@media only screen and (min-width: $medium) {
+		width: 33%;
+		float: right;
+		margin: 1.5em;
+	 
+	}
+}
+
+footer {
+	height: $footerheight;
+	background-color: $nav-bkg;
+	padding: 10px;
+	text-align: center;
+	color: $nav-link;
+	margin-top: 1em;
+	p {
+		font-size: .87em;
+		width: $wrapper-width;
+	}
+}
+
+.grid__item {
+	margin-top: $gridGutter;
+	.inner {
+	@include content-block;
+	button {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+}
+}
+
+
+.full-page {
+		@include content-block;
+		min-height: 80vh;
+	}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1.site-title {
+padding-top: $logo-dimension-small;
+  font-family: "Times New Roman", Georgia, Serif;
+  color: $site-title-first-color;
+  font-size: 3.5em;
+  text-align: center;
+  @media only screen and (min-width: $small) {
+	  font-size: 5em;
+	  padding-top: $logo-dimension-small/2;
+   
+  }
+
+  
+  .sub {
+	  font-size: .87em;
+	  margin-top: -.75em;;
+  }
+
+  span {
+    color: $site-title-second-color;
+  }
+  
+  .h1-small {
+	  font-size: .5em;
+  }
+  
+}
+
+.content-page {
+	h1.site-title {
+		padding-top: $logo-dimension-small/2;
+		@media only screen and (max-width: $small) {
+			padding-top: $logo-dimension-small;
+		 
+		}
+	}
+	
+}
+
+header {
+		min-height: $logo-dimension;
+	  p {
+	  text-align: center;
+	  margin: 1.5em;
+	  font-size: 1.35em;
+	  line-height: 1.65em;
+	    text-shadow:
+	   -1px -1px 0 #FFF7B6,  
+	    1px -1px 0 #FFF7B6,
+	    -1px 1px 0 #FFF7B6,
+	     1px 1px 0 #FFF7B6;
+	  }
+	  
+	  
+	  
+	  @media only screen and (min-width: $small) {
+		min-height: $logo-dimension -($logo-dimension/3);
+		
+	  p {
+		  font-size: 2em;
+		  }
+   
+  }
+  
+  @media only screen and (min-width: $large) { 
+	  
+	  p {
+		  font-size: 2.5em;
+		  }
+	  
+	  }
+}
+
+.wrapper {
+	width: $wrapper-width;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.tagline {
+	height: 80vh;
+	width: 100%;
+	@media only screen and (min-width: $small) {
+			max-width: 70%;
+		 
+		}
+	display: table;
+	p {
+		display: table-cell; 
+		vertical-align: middle; 
+		text-align: center; 
+		
+	}
+}
+.parallax-window {
+  min-height: 100vh;
+  background: transparent;
+  margin: 0;
+  border-bottom: 1px solid #000000;
+  position: relative;
+}
+
+/*****************************
+*     responsiive navigation 
+*     change apearance as needed
+*     these are the visual styles, positioing is done in
+*     responsive-navigation.css
+********************************/
+
+nav {
+	.wrapper {
+		width: 100%;
+	}
+	width: 100%;
+	background-color: $nav-bkg;
+
+		box-shadow: 10px 0px 10px $shadow;box-shadow: 10px 0px 10px $shadow;
+	 
+
+	
+	ul {
+  background-color: $nav-bkg;
+  color: $nav-link;
+
+  li {
+    a {
+      text-decoration: none;
+      padding: 20px;
+      color: $nav-link;
+
+      &:hover {
+        background-color: #000000;
+        color: $nav-link;
+      }
+    }
+  }
+}
+}
+
+.handle {
+          /* this is the div that contains the menu button
+	it's hidden on fullscreen */
+	height: $logo-dimension-small;
+  background: $nav-bkg;
+  color: $nav-link;
+  position: relative;
+
+
+
+  /* reset as needed */
+  padding: 20px 0 0 0;
+
+  /* reset as needed */
+  .inner {
+    width: 125px;
+    padding: 15px 10px;
+    border: 1px solid $nav-link;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: $small) {
+  /* mobile: make sure this media query matches the one in responsive-navigation.css */
+
+  .showing {
+    max-height: 20em;
+  }
+
+  nav ul li {
+    text-align: left;
+  }
+
+  nav ul li a {
+    padding: 15px;
+  }
+}
+
+/* /respinsive nav*/
+
+.language {
+		
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-align: center;
+	
+	a, a:visited {
+		display: inline-block;
+		padding: 10px 15px;
+		@media only screen and (max-width: $small) {
+			padding: 15px;
+		 
+		}
+		text-decoration: none;
+		font-weight: bold;
+		background-color: $nav-link;
+		color: $nav-bkg;
+		border: 1px solid $nav-bkg;
+		border-radius: 12px;
+		&:hover, &:active, &:focus {
+			text-decoration: underline;
+			background-color: #ffffff;
+		}
+	}
+	
+	@media only screen and (max-width: $small) {
+		top: 20px;
+		right: 4%;
+	 
+	}
+}
+
+	.full {
+		@media only screen and (max-width: $small) {
+			display: none;
+		 
+		}
+	}
+	
+	.short {
+		@media only screen and (min-width: $small) {
+			display: none;
+		 
+		}
+		}
+		
+		
+	
+.logo {
+	width: $logo-dimension-small;
+	max-height: $logo-dimension-small;
+	background-color: #ffffff;
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	z-index: 999;
+	@media only screen and (min-width: $medium) {
+		width: $logo-dimension;
+		max-height: $logo-dimension;
+		left: $logo-dimension/2;
+
+		box-shadow: 3px 2px 5px rgba(0,0,0,.5);
+		
+	 
+	}
+}
+
+.no-svg logo {
+	background-image: url(../images/logo-heroxx-logistix.png);
+	background-repeat: no-repeat;
+	
+}
+
+.button {
+		a {
+			display: block;
+			width: 100%;
+			padding: 1em;
+			background-color: $borders-and-highlights;
+			color: #ffffff;
+			text-decoration: none;
+			font-size: 1.15em;
+			text-align: center;
+			&:hover, &:active, &:focus {
+				background-color: $nav-bkg;
+			}
+			&:visited {
+				color: #ffffff;
+			}
+			}
+}
+
+// contact form
+
+#contact-area {
+	width: 600px;
+	max-width: 100%;
+	padding: .25em;
+	margin: 25px auto;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 471px;
+	max-width: 100%;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+	width: 160px;
+	float: right;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+
+
+

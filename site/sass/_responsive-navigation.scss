@@ -1,0 +1,46 @@
+/* 	responsiive navigation 
+	change apearance as needed
+*/
+
+nav ul {
+  /* visual styles are set in style.css */
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  transition: max-height 0.4s;
+  li {
+	   display: inline-block;
+	   a {
+		   display: block;
+		   
+	   }
+  }
+}
+
+
+.handle {
+  /* visual styles are set in style.css */
+  width: 100%;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+@media screen and (max-width: $small) {
+  /* make sure this media query matches the one in style.css */
+
+  nav ul {
+    max-height: 0px;
+    li {
+	    width: 100%;
+    }
+  }
+
+  .handle {
+    display: block;
+  }
+}
+
+/* /responsive navigation */

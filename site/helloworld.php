@@ -1,0 +1,10 @@
+
+
+<? 
+	$var = "HelloWorld!";
+
+	echo "$var";
+?>
+
+
+

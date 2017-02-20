@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+	<!--[if lt IE 7]> <html lang="en-US" class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-US" class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-US" class="ie8 oldie"> <![endif]-->
+<!--[if IE 9]>    <html lang="en-US" class="ie9 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]--><head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title> CADSI / AICDS</title>
+	<meta name="description" content="meta-desc goes here ">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="canonical" href="https://www.defenceandsecurity.ca">
+
+	<meta name="keywords" content="meta-keywords goes here" />
+	<meta name="author" content="CADSI / AICDS">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+                <link rel="stylesheet" href="/_common/libs/jquery-ui/smoothness_1.10.2/jquery-ui-1.10.2.custom.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/_common/libs/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/_common/libs/boostrap-plugins/offcanvas/1.3.5/css/bootstrap.offcanvas.min.css">
+    <link rel="stylesheet" href="/_common/css/3.0/style.css">
+
+		<link rel="stylesheet" href="/_common/libs/blueimp/blueimp-gallery.min.css">
+
+    
+
+		<link rel="stylesheet" href="/_common/libs/bootstrap/3.3.2/css/bootstrap-datetimepicker.min.css">
+
+	<link rel="stylesheet" href="/_common/libs/jquery/jquery_toggles/toggles.css">
+	<link rel="stylesheet" href="/_common/libs/jquery/jquery_toggles/themes/toggles-light.css">
+	<link rel="stylesheet" href="/_common/css/3.0/custom.css?20161216">
+	<link rel="stylesheet" href="/_common/css/countryProfile.css?20161211">
+		<!--[if lt IE 9]>
+      <script src="/_common/libs/ie8.js"></script>
+      <script src="/_common/libs/html5shiv.min.js"></script>
+      <script src="/_common/libs/respond.min.js"></script>
+    <![endif]-->
+	<script src="/_common/libs/jquery/1.11.2/jquery-1.11.2.min.js"></script>
+	<script>
+	// prevent colsole 'undefined' errors on IE 8
+	if (typeof console == "undefined") {
+	    window.console = {
+    	    log: function () {}
+    	};
+	}
+		var pageScripts = [];
+	</script>
+</head>	
+<body>
+		<!-- Navigation -->
+<div class="header" >
+	<nav class="main-nav navbar navbar-inverse navbar-static-top " role="navigation" id="js-bootstrap-offcanvas">
+		<div class="navbar-container-1">
+			<div class="container ">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed offcanvas-toggle" data-toggle="offcanvas" data-target=".navbar-offcanvas">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<ul class="nav navbar-nav navbar-left" id="">
+						<li class=""><a target="_blank" class="underline-blue" href="https://twitter.com/cadsicanada"><img class="icon-twitter" src="/img/icon-twitter-header.png" alt="" >Follow Cadsi</a></li>
+					</ul>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="navbar-collapse-1 navbar-offcanvas navbar-inverse navbar-offcanvas-right navbar-offcanvas-fade" id="navbar-collapse-1">
+
+					<ul class="nav navbar-nav navbar-right">
+                        						<!--<li><a class="underline-purple" href="http://www.canadiancapabilities.ca"></a></li>-->
+                        <li class="hidden-sm hidden-md"><a class="underline-red" href="/cms3/contact">Contact Us</a></li>
+													<li class="hidden-sm hidden-md">
+								<a class="underline-red" href="/login/login"> Login</a>
+							</li>
+																		<li class="dropdown hidden-lg hidden-xs">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+
+                                <li class=""><a role="menuitem" href="/cms3/contact">Contact Us</a></li>
+                                									<li class=""><a role="menuitem" href="/login/login">Login</a></li>
+																							</ul>
+						</li>
+						<li class="visible-xs"><a class="underline-blue" href="/CANSEC/">CANSEC</a></li>
+                        						<!--<li><a class="underline-purple" href="http://www.canadiancapabilities.ca"></a></li>-->
+					</ul>
+				</div><!-- /.navbar-offcanvas -->
+			</div><!-- /.container -->
+		</div>
+
+		<div class="navbar-container-2">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/" rel="home">
+						<img class="img-responsive pull-left" src="/img/logo.png" alt="CADSI | AICDS">
+						<img class="hidden-xs hidden-sm hidden-md pull-left" src="/img/logo-header.png" alt="Canadian Association of Defence and Security Industries | Association des industries canadiennes de d&eacute;fense et s&eacute;curit&eacute;">
+					</a>
+				</div>
+
+				<div class="navbar-nav navbar-right navbar-search">  					<form class="navbar-form" role="search" method="get" action="/search/search"  >
+                        <input type="hidden" name="search" value="1" />
+						<div class="form-group">
+							<label class="sr-only" for="site-search-header">Search CADSI</label>
+							<div class="input-group">
+                                                                <input name="query" type="text" class="form-control" placeholder="Search CADSI">
+
+
+                                <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-default">
+                                        <span class="glyphicon glyphicon-search"><span class="sr-only">Search</span></span>
+                                    </button>
+                                </span>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="navbar-collapse-2 navbar-offcanvas navbar-inverse navbar-offcanvas-right" id="navbar-collapse-2">
+							<ul class="nav navbar-nav navbar-right main-menu">
+					<li class="dropdown">
+							<a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown">
+					About CADSI				</a>
+									<ul class="dropdown-menu dropdown-menu-right">
+						<li class="">
+							<a href="/cms3/about-CADSI" class="" >
+					Our Association				</a>
+								</li>
+
+			<li class="">
+							<a href="/cms3/president" class="" >
+					President				</a>
+								</li>
+
+			<li class="">
+							<a href="/cms3/board-of-directors" class="" >
+					Board of Directors				</a>
+								</li>
+
+			<li class="">
+							<a href="/cms3/executive-team" class="" >
+					Executive Team				</a>
+								</li>
+
+			<li class="">
+							<a href="/cms3/operating-committees" class="" >
+					Operating Committees				</a>
+								</li>
+
+			<li class="">
+							<a href="/cms3/affiliates" class="" >
+					Affiliates				</a>
+								</li>
+
+				</ul>
+					</li>
+
+			<li class="dropdown">
+							<a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown">
+					Our Membership				</a>
+									<ul class="dropdown-menu dropdown-menu-right">
+						<li class="">
+							<a href="/cms3/who-we-represent" class="" >
+					Our Industries				</a>
+								</li>
+
+			<li class="">
+							<a href="/cms3/our-resources" class="" >
+					Our Resources 				</a>
+								</li>
+
+			<li class="">
+							<a href="/cms3/our-members" class="" >
+					Our Members				</a>
+								</li>
+
+			<li class="">
+							<a href="/cms3/membership" class="" >
+					Become a Member				</a>
+								</li>
+
+				</ul>
+					</li>
+
+			<li class="dropdown">
+							<a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown">
+					News				</a>
+									<ul class="dropdown-menu dropdown-menu-right">
+						<li class="">
+							<a href="/media/news" class="" >
+					CADSI News				</a>
+								</li>
+
+			<li class="">
+							<a href="/media/member-news" class="" >
+					Member News				</a>
+								</li>
+
+			<li class="">
+							<a href="/media/industry-news" class="" >
+					Industry News				</a>
+								</li>
+
+			<li class="">
+							<a href="/media/speeches" class="" >
+					Speeches				</a>
+								</li>
+
+			<li class="">
+							<a href="/media/reports" class="" >
+					Publications				</a>
+								</li>
+
+				</ul>
+					</li>
+
+			<li class="dropdown">
+							<a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown">
+					Events				</a>
+									<ul class="dropdown-menu dropdown-menu-right">
+						<li class="">
+							<a href="/events/list" class="" >
+					CADSI Events				</a>
+								</li>
+
+			<li class="">
+							<a href="/cms3/CANSEC" class="" >
+					CANSEC				</a>
+								</li>
+
+			<li class="">
+							<a href="/cms3/Industry-Events" class="" >
+					Industry Events				</a>
+								</li>
+
+				</ul>
+					</li>
+
+			</ul>
+					</div><!-- /.navbar-offcanvas -->
+			</div><!-- /.container -->
+		</div>
+	</nav>
+</div>
+    
+	<main role="main"> 
+		<section class="main">
+			<div class="container">
+				<div class="page">
+					<ol class="breadcrumb no-print">
+						
+						<li><a href="/">CADSI</a></li>
+						
+						<li class="active">Contact Us</li>
+									</ol>
+                    
+					<div class="row">
+                    
+						<article class="content col-md-8">
+							<h1>Contact CADSI</h1>
+
+<div class="row vcard" itemscope="" itemtype="http://schema.org/Organization">
+<div class="col-md-6 col-sm-6 contact-info">
+<div>
+<p class="org" itemprop="name"><strong>The Canadian Association of Defence and Security Industries</strong></p>
+
+<p class="adr" itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span class="street-address" itemprop="streetAddress">300 - 251 Laurier Avenue West</span><br />
+<span class="locality" itemprop="addressLocality">Ottawa</span>, <span class="region" itemprop="addressRegion">Ontario</span> <span class="postal-code" itemprop="postalCode">K1P 5J6</span></p>
+
+<div class="contact-methods">
+<p class="tel contact-method"><span class="type">Phone</span> <span class="value"><a href="tel:16132355337" itemprop="telephone">+1 613-235-5337</a></span></p>
+
+<p class="tel contact-method"><span class="type">Fax</span> <span class="value"><a href="tel:16132350784" itemprop="faxNumber">+1 613-235-0784</a></span></p>
+
+<p class="contact-method"><span class="type">Email</span> <span class="value"><a href="mailto:cadsi@defenceandsecurity.ca" itemprop="email">cadsi@defenceandsecurity.ca</a></span></p>
+
+<p class="contact-method"><span class="type">Twitter</span> <span class="value"><a href="https://twitter.com/cadsicanada" itemprop="url" target="_blank">https://twitter.com/cadsicanada</a></span></p>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-sm-6 opening-hours">
+<p><strong>Business Hours:</strong></p>
+
+<p class="opening-hours-entry"><span class="days">Monday - Friday</span> <time class="times" datetime="Mo-Fr 08:30-17:00">8:30am - 5:00pm ET</time></p>
+
+<p class="opening-hours-entry"><span class="days">Statutory Holidays</span> <span class="times">Closed</span></p>
+</div>
+</div>
+
+<h2>CADSI Staff</h2>
+
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Name</th>
+			<th>Extension</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="title-department">
+			<td colspan="3">
+			<div>Executive</div>
+			</td>
+		</tr>
+		<tr>
+			<td>President</td>
+			<td>Christyn Cianfarani</td>
+			<td>24</td>
+		</tr>
+		<tr>
+			<td>Vice President, Policy and Government Relations</td>
+			<td>Janet Thorsteinson</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>Vice President, Operations</td>
+			<td>Paul Keogh</td>
+			<td>32</td>
+		</tr>
+		<tr>
+			<td>Associate Vice President, Policy, Communications and Government Relations</td>
+			<td>Nicolas Todd</td>
+			<td>37</td>
+		</tr>
+		<tr>
+			<td><span style="line-height: 22.2222px;">Executive Assistant</span></td>
+			<td>Ayesha Thorne</td>
+			<td><span style="line-height: 22.2222px; background-color: rgb(245, 245, 245);">35</span></td>
+		</tr>
+		<tr class="title-department">
+			<td colspan="3">
+			<div>Events</div>
+			</td>
+		</tr>
+		<tr>
+			<td>Manager, Domestic Events</td>
+			<td>Theresa Ellwood</td>
+			<td>28</td>
+		</tr>
+		<tr>
+			<td>Manager, International Business Development</td>
+			<td>Richard Mabley</td>
+			<td>38</td>
+		</tr>
+		<tr class="title-department">
+			<td colspan="3">
+			<div class="title-department"><span style="font-weight: bold; text-transform: uppercase; background-color: rgb(245, 245, 245);">FINANCE AND ADMINISTRATION</span></div>
+			</td>
+		</tr>
+		<tr>
+			<td>Comptroller, Director of Human Resources and Office Environment&nbsp;</td>
+			<td>Bal Mahal</td>
+			<td>41</td>
+		</tr>
+		<tr>
+			<td>Manager, Operations &amp; Administration</td>
+			<td>Andrea Walton</td>
+			<td>26</td>
+		</tr>
+		<tr>
+			<td>Accounting Coordinator</td>
+			<td>Laura Zandbelt</td>
+			<td>42</td>
+		</tr>
+		<tr class="title-department">
+			<td colspan="3">
+			<div>IM/IT</div>
+			</td>
+		</tr>
+		<tr>
+			<td>Manager, IT/IM Systems</td>
+			<td>Brian Rousse</td>
+			<td>44</td>
+		</tr>
+		<tr class="title-department">
+			<td colspan="3">
+			<div>BuSINESS DEVELOPMENT, Marketing and Membership</div>
+			</td>
+		</tr>
+		<tr>
+			<td>Director, Business Development &amp; Marketing</td>
+			<td>Steven Hillier</td>
+			<td>22</td>
+		</tr>
+		<tr>
+			<td>Manager, Marketing</td>
+			<td>Christel Gallant</td>
+			<td>23</td>
+		</tr>
+		<tr>
+			<td>Manager, Customer Service (Membership)</td>
+			<td>Mélanie Farah-Roy</td>
+			<td>21</td>
+		</tr>
+		<tr>
+			<td>Graphic Designer</td>
+			<td>Victoria Doak</td>
+			<td>46</td>
+		</tr>
+		<tr class="title-department">
+			<td colspan="3">
+			<div class="title-department"><strong>Communications,&nbsp;</strong><span style="font-weight: bold; text-transform: uppercase; background-color: rgb(245, 245, 245);">POLICY AND GOVERNMENT RELATIONS</span></div>
+			</td>
+		</tr>
+		<tr>
+			<td>Communications Manager</td>
+			<td>Ann Marie Paquet</td>
+			<td>43</td>
+		</tr>
+		<tr class="title-department">
+			<td colspan="3">
+			<div><span style="line-height: 22.2222px;">Security</span></div>
+			</td>
+		</tr>
+		<tr>
+			<td>Lead, Security Portfolio</td>
+			<td>Nicholas Pozhke</td>
+			<td>29</td>
+		</tr>
+		<tr class="title-department">
+			<td colspan="3">
+			<div>Sale Agents</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Exhibit &amp; Sponsorship Sales</p>
+
+			<p>Exhibit &amp; Sponsorship Sales</p>
+
+			<p>Manager, Exhibits</p>
+			</td>
+			<td>
+			<p>Patricia Pearson</p>
+
+			<p>Ann Clemensen</p>
+
+			<p>Catherine Lyons</p>
+			</td>
+			<td>
+			<p>48</p>
+
+			<p>47</p>
+
+			<p>27</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+ 
+						</article>
+          
+          
+						<aside class="col-md-4 sidebar">
+							<a target="_blank" class="btn btn-aside btn-block" href="https://twitter.com/share?url=https%3A%2F%2Fwww.defenceandsecurity.ca%2Fcms3%2Fcontact&via=cadsicanada&amp;text=CADSI+%2F+AICDS"><img src="/img/icon-twitter-sidebar.png" alt="Twitter"> Share this page</a><div class="subfeatures"><a class="subfeature" href="/media/cadsi-news">
+						<img class="img-responsive" src="/img/subfeatures/subfeature_1.jpg?20160620">
+						<h2 class="subfeature-heading">OUR INDUSTRIES</h2>
+					 </a>
+				<a class="subfeature" href="/cms3/membership">
+						<img class="img-responsive" src="/img/subfeatures/subfeature_2.jpg?20160620">
+						<h2 class="subfeature-heading">OUR ROLE</h2>
+					 </a>
+				<a class="subfeature" href="/CANSEC/">
+						<img class="img-responsive" src="/img/subfeatures/subfeature_3.jpg?20160620">
+						<h2 class="subfeature-heading">OUR EVENTS</h2>
+					 </a>
+				</div>						</aside>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+
+
+	
+			<section class="member-ask">
+				<div class="container"> <a class="member-ask-link arrow-link" href="/cms3/membership"><strong>Is keeping Canada safe your business?</strong> Become a CADSI member today</a> </div>
+			</section>
+		     
+		<section class="info-news">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="event-list info-list">
+							<h3 class="info-news-heading">CADSI Events</h3>
+							<div class="list-group">
+								
+				<a href="/events/details?evtID=295" class="list-group-item media event">
+					<div class="pull-left date">
+						<span class="day">19-23</span> <abbr class="month" title="February">FEB</abbr>
+					</div>
+					<h4 class="list-group-item-heading">IDEX 2017</h4>
+					<p class="list-group-item-text secondary">Abu Dhabi National Exhibition Centre</p>
+					<p href="/events/details?evtID=295" class="details arrow-link">Details</p>
+				</a>
+		
+				<a href="/events/details?evtID=326" class="list-group-item media event">
+					<div class="pull-left date">
+						<span class="day">29</span> <abbr class="month" title="March">MAR</abbr>
+					</div>
+					<h4 class="list-group-item-heading">CADSI 2016 Annual General Meeting</h4>
+					<p class="list-group-item-text secondary">Westin Ottawa</p>
+					<p href="/events/details?evtID=326" class="details arrow-link">Details</p>
+				</a>
+		
+				<a href="/events/details?evtID=316" class="list-group-item media event">
+					<div class="pull-left date">
+						<span class="day">11-13</span> <abbr class="month" title="April">APR</abbr>
+					</div>
+					<h4 class="list-group-item-heading">2017 Canadian Armed Forces Outlooks (Army, Navy, Air Force)</h4>
+					<p class="list-group-item-text secondary">Ottawa Shaw Centre, 55 Colonel By Drive</p>
+					<p href="/events/details?evtID=316" class="details arrow-link">Details</p>
+				</a>
+		
+							</div>
+							<a href="/events/list" class="info-news-link arrow-link">Calendar</a>
+						</div>
+								</div>
+				<div class="col-md-4">
+					
+					<div class="media-releases-list">
+						<h3 class="info-news-heading">CADSI News</h3>
+						<div class="list-group info-list">
+								<a class="list-group-item media event" href="/media/article&id=314&t=c">
+						<h4 class="list-group-item-heading">New Virtual Collaborative Environment Will Foster Security Materials Innovation</h4>
+						<p class="list-group-item-text secondary"><time datetime="2016-11-24">NOV 24, 2016</time></p>
+					</a>
+			<a class="list-group-item media event" href="/media/article&id=313&t=c">
+						<h4 class="list-group-item-heading">Statement by the Canadian Association of Defence and Security Industries on the Replacement of the CF-18 Fleet</h4>
+						<p class="list-group-item-text secondary"><time datetime="2016-11-23">NOV 23, 2016</time></p>
+					</a>
+			<a class="list-group-item media event" href="/media/article&id=312&t=c">
+						<h4 class="list-group-item-heading">Appointment Opportunities: Members, Veterans Review and Appeal Board</h4>
+						<p class="list-group-item-text secondary"><time datetime="2016-11-04">NOV 04, 2016</time></p>
+					</a>
+		
+						</div>
+						<a class="info-news-link arrow-link" href="/media/news">More News</a>
+					</div>
+
+								</div>
+				<div class="col-md-4">
+					
+					<div class="media-releases-list">
+						<h3 class="info-news-heading">Defence & Security News</h3>
+						<div class="list-group info-list">
+								<a class="list-group-item media event" href="http://www.defense-aerospace.com/cgi-bin/client/modele.pl?shop=dae&modele=afp&prod=179701&cat=18">
+						<h4 class="list-group-item-heading">NATO urges Russia to prod Ukraine rebels to meet truce commitments</h4>
+						<p class="list-group-item-text secondary"><time datetime="2016-12-19T22:24:01-05:00">19 DEC 2016 | AFP</time></p>
+					</a>
+			<a class="list-group-item media event" href="http://www.defense-aerospace.com/cgi-bin/client/modele.pl?shop=dae&modele=release&prod=179700&cat=3">
+						<h4 class="list-group-item-heading">US Files Appeal Against WTO Ruling On Boeing Tax Breaks</h4>
+						<p class="list-group-item-text secondary"><time datetime="2016-12-19T20:44:45-05:00">19 DEC 2016 | Defence & Security Press Releases</time></p>
+					</a>
+			<a class="list-group-item media event" href="http://www.defense-aerospace.com/cgi-bin/client/modele.pl?shop=dae&modele=release&prod=179699&cat=3">
+						<h4 class="list-group-item-heading">Italy?s Top Court Orders Retrial of ex-Finmeccanica Chiefs In India Bribery Case</h4>
+						<p class="list-group-item-text secondary"><time datetime="2016-12-19T20:44:32-05:00">19 DEC 2016 | Defence & Security Press Releases</time></p>
+					</a>
+		
+						</div>
+						<a class="info-news-link arrow-link" href="/media/industry-news">More News</a>
+					</div>
+
+								</div>
+			</div>
+		</div>
+	</section>
+	
+				
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-7 col-sm-12 logo-contact">
+					<div class="row">
+						<div class="col-lg-2 col-md-3 logo">
+							<a href="/" rel="home"> <img src="/img/logo-footer.png" alt="CADSI | AICDS"> </a>
+						</div>
+						<div class="col-md-9 contact">
+							<div class="vcard" itemscope itemtype="http://schema.org/Organization">
+								<p class="org" itemprop="name"><b>The Canadian Association of Defence and Security Industries</b></p>
+								<p class="adr" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									<span class="street-address" itemprop="streetAddress">300 - 251 Laurier Avenue West</span><span class="comma">,</span> 
+									<span class="locality" itemprop="addressLocality">Ottawa</span>, 
+									<span class="region" itemprop="addressRegion">Ontario</span>
+									<span class="postal-code" itemprop="postalCode">K1P 5J6</span> 
+								</p>
+								<span class="tel">
+                                	<span class="type">T</span>: <span class="value"><a itemprop="telephone" href="tel:16132355337">+1 613-235-5337</a></span> </span> 
+                                    <span class="tel"><span class="type">F</span>: <span class="value"><a itemprop="faxNumber" href="tel:16132350784">+1 613-235-0784</a></span> 
+								</span> 
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-5 col-sm-12 links-colophon">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul class="nav nav-pills  no-print">
+                                <li><a href="/cms3/privacy">Privacy</a></li>
+                                <li><a href="/cms3/contact">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <small class="colophon center-block">Copyright &copy; 2015 - 2016 CADSI / AICDS.<br> All Rights Reserved.</small>
+			        	</div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</footer>
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-62233616-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+	
+    <div class="container no-print">
+        							
+	</div>
+    
+		<!-- Bootstrap -->
+
+
+
+    <script src="/_common/libs/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="/_common/libs/boostrap-plugins/offcanvas/1.3.5/js/bootstrap.offcanvas.min.js"></script>
+	<script src="/_common/libs/jquery-ui/jquery-ui.min.js"></script>
+	<script type='text/javascript' src='/_common/libs/jquery/jqCheckbox.js'></script>
+	<script src="/_common/js/scripts.js"></script>
+
+
+    <script src="/share/lib/jqTree/jquery.tree.min.js" type="text/javascript"></script>	
+		<script src="/_common/libs/jquery_toggles/toggles.min.js"></script>
+		<script src="/_common/libs/blueimp/jquery.blueimp-gallery.min.js"></script>
+		<script src="/_common/libs/moment.min.js"></script>
+    	<script src="/_common/libs/clipboard/clipboard.min.js"></script>
+	<script src="/_common/libs/bootstrap/3.3.2/js/bootstrap-datetimepicker.min.js"></script>
+	    <script src="/_common/js/app.js"></script>
+
+    </body>
+</html>

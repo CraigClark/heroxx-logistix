@@ -1,0 +1,1 @@
+var grid=document.querySelector(".grid"),msnry=new Masonry(grid,{itemSelector:".grid__item",percentPosition:!0});imagesLoaded(grid).on("progress",function(){msnry.layout()});
